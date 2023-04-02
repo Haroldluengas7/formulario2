@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="#" type="image/x-icon">
+	<title>Formulario</title> 
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+	<main>
+		<form action="" class="formulario" id="formulario">
+
+			<!-- Grupo: Usuario -->
+			<section class="formulario__grupo" id="grupo__usuario">
+				<label for="usuario" class="formulario__label">Usuario</label>
+				<select name="Usuario" id="Usuario" >
+					<option disabled selected="">Seleccione su tipo de usuario</option>
+					<option value="Administrativo">Administrativo</option>
+					<option value="Estudiante">Estudiante</option>
+				  </optgroup>
+					</select>
+				<section class="formulario__grupo-input">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</section>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+
+			<!-- Grupo: Nombre -->
+			<section class="formulario__grupo" id="grupo__nombre">
+				<label for="nombre" class="formulario__label">Nombre</label>
+				<section class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Pepito David">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</section>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</section>
+
+			<!-- Grupo: Apellido -->
+			<section class="formulario__grupo" id="grupo__apellido">
+				<label for="apellido" class="formulario__label">Apellido</label>
+				<section class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="apellido" id="apellido" placeholder="Perez Gonzales">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</section>
+				<p class="formulario__input-error">El usuario tiene que ser de 4 a 16 dígitos y solo puede contener numeros, letras y guion bajo.</p>
+			</section>
+
+
+			<!-- Grupo: Correo Electronico -->
+			<section class="formulario__grupo" id="grupo__correo">
+				<label for="correo" class="formulario__label">Correo Electrónico</label>
+				<section class="formulario__grupo-input">
+					<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</section>
+				<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.</p>
+			</section>
+
+			<!-- Grupo: Teléfono -->
+			<section class="formulario__grupo" id="grupo__telefono">
+				<label for="telefono" class="formulario__label">Teléfono</label>
+				<section class="formulario__grupo-input">
+					<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="4491234567">
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</section>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</section>
+			<!-- Grupo: mensaje -->
+			<section class="formulario__grupo" id="grupo__mensaje">
+				<label for="Mensaje" class="formulario__label">Mensaje</label>
+				<section class="formulario__grupo-input">
+					<textarea id="fm_contact" rows="8" cols="50" class="msn" placeholder="Escribe tu Mensaje" required>
+					</textarea> 
+					<i class="formulario__validacion-estado fas fa-times-circle"></i>
+				</section>
+				<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.</p>
+			</section>
+
+			<!-- Grupo: Terminos y Condiciones -->
+			<section class="formulario__grupo" id="grupo__terminos">
+				<label class="formulario__label">
+					<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+					Acepto los Terminos y Condiciones
+				</label>
+			</section>
+
+			<section class="formulario__mensaje" id="formulario__mensaje">
+				<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor llena el formulario. </p>
+			</section>
+
+			<section class="formulario__grupo formulario__grupo-btn-enviar">
+				<button type="submit" class="formulario__btn">Enviar</button>
+				<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Formulario enviado exitosamente!</p>
+			</section>
+			<h3 id="respuesta" class="respuesta"></h3>
+		</form>
+		
+	</main>
+
+	<script src="dist/formulario.js"></script>
+	<script src="dist/paint.js"></script>
+
+</body>
+</html>
